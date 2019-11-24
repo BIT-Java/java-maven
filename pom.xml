@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <build>
-        <finalName>${project.name}-${project.version}</finalName>
+        <finalName>${project.artifactId}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -55,7 +55,6 @@
             <version>1.18.10</version>
             <scope>provided</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
@@ -68,12 +67,12 @@
             <version>5.6.0-M1</version>
             <scope>test</scope>
         </dependency>
-        <!-- FileUtil -->
-        <dependency>
+        <!-- dependency added to local Maven repository with mvn install cmd -->
+        <!--<dependency>
             <groupId>pl.mzlnk</groupId>
             <artifactId>FileUtil</artifactId>
             <version>1.0</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
 </project>
